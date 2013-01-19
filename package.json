@@ -1,0 +1,11 @@
+{
+  "name": "binary-xhr",
+  "version": "0.0.1",
+  "repository": {
+    "type":"git",
+    "url": "git@github.com:maxogden/binary-xhr.git"
+  },
+  "dependencies": {
+    "inherits": "1.0.0"
+  }
+}
