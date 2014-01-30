@@ -8,8 +8,8 @@ function BinaryXHR(url, cb) {
   var self = this
   var xhr = new XMLHttpRequest()
   this.xhr = xhr
-  xhr.responseType = 'arraybuffer'
   xhr.open("GET", url, true)
+  xhr.responseType = 'arraybuffer'
   xhr.onreadystatechange = function () {
     if (self.xhr.readyState === 4) {
       if (self.xhr.status !== 200) {
