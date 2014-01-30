@@ -1,11 +1,41 @@
 {
   "name": "binary-xhr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "git@github.com:maxogden/binary-xhr.git"
   },
   "dependencies": {
     "inherits": "1.0.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "tape": "~2.4.0"
+  },
+  "description": "make binary XHR GETs in modern browsers",
+  "bugs": {
+    "url": "https://github.com/maxogden/binary-xhr/issues"
+  },
+  "homepage": "https://github.com/maxogden/binary-xhr",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "firefox/17..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
   }
 }
