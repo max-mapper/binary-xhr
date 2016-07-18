@@ -1,5 +1,3 @@
-var inherits = require('inherits')
-
 module.exports = function(url, cb) {
   return new BinaryXHR(url, cb)
 }
@@ -24,3 +22,4 @@ function BinaryXHR(url, cb) {
   }
   xhr.send(null)
 }
+
