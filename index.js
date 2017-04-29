@@ -1,8 +1,6 @@
 var inherits = require('inherits')
 
-module.exports = function(url, cb) {
-  return new BinaryXHR(url, cb)
-}
+module.exports = (url, cb) => new BinaryXHR(url, cb)
 
 function BinaryXHR(url, cb) {
   var self = this
@@ -10,7 +8,7 @@ function BinaryXHR(url, cb) {
   this.xhr = xhr
   xhr.open("GET", url, true)
   xhr.responseType = 'arraybuffer'
-  xhr.onreadystatechange = function () {
+  xhr.onreadystatechange = () => {
     if (self.xhr.readyState === 4) {
       if (self.xhr.status !== 200) {
         cb(self.xhr.status, self.xhr.response);
